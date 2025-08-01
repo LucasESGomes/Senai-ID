@@ -1,10 +1,16 @@
 import React from 'react';
 import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
 
-const Login = () => {
+function Login () {
+
+
     return (
+        <>
+            <Header />
 
-          <Header />
+            <Footer />
+        </>
     );
 };
 
