@@ -1,4 +1,4 @@
-const footer = () => {
+const Footer = () => {
 
     return(
         <footer className="w-full shadow-2xl/100" >
@@ -38,4 +38,4 @@ const footer = () => {
     );
 }
 
-export default footer;
+export default Footer;

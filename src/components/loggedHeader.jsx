@@ -1,5 +1,4 @@
 import logo from "../assets/logo.png";
-import MenuSelection from "./assets/menuSelection.png";
 import { ArrowRightLeft } from 'lucide-react';
 
 const Header = () => {

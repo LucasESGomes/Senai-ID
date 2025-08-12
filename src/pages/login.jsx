@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
 import Header from "../components/header.jsx";
@@ -11,27 +12,38 @@ import { PasswordInput } from '../components/passwordInput.jsx';
 import { GraduationCap } from 'lucide-react';
 import { FormContainer } from '../components/formContainer.jsx';
 
+// util
+import maskCPF from '../util/maskCpf.js';
+
 function Login () {
-
-
+    const [cpf, setCpf] = useState("");
+    const handleCpfChange = (e) => {
+        setCpf(maskCPF(e.target.value));
+    };
+    
     return (
         <>
             <Header />
             <MainContent>
-                <FormContainer buttonText="Entrar" title="Faça o login" onSubmit={() => {alert('Login realizado com sucesso!')}}>
-                    <div className="flex flex-col gap-10 p-5">
+                <FormContainer buttonText="Entrar" title="Faça o login" onSubmit={() => {alert(cpf)}}>
+                    <div className="flex flex-col gap-10">
                         <span>
                             <h2>Insira seu CPF</h2>
-                            <IconInput icon={<GraduationCap />} placeholder="123.456.789-00" type="text" />
+                            <IconInput maxLength={14} icon={<GraduationCap />} placeholder="123.456.789-00" type="text" value={cpf} onChange={handleCpfChange} />
                         </span>
-
                         <span>
                             <h2>Insira sua senha</h2>
                             <PasswordInput />
                         </span>
+                        <div className="flex items-start justify-start flex-col gap-3">
                         <span>
-                            <h4>Esqueceu sua senha?</h4>
+                            <NavLink to="/forgot-password" className="text-red-600 hover:underline">Esqueceu sua senha?</NavLink>
                         </span>
+                        <span className='flex items-center gap-3 content-start'>
+                            <label htmlFor="remember-me">Lembrar de mim</label>
+                            <input type="checkbox" id="remember-me" />
+                        </span>
+                        </div>
                     </div>
                 </FormContainer>
             </MainContent>
