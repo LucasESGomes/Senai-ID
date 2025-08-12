@@ -1,7 +1,7 @@
 const footer = () => {
 
     return(
-        <footer className="absolute bottom-0 w-full shadow-2xl/100" >
+        <footer className="w-full shadow-2xl/100" >
             <nav className="w-full py-4" >
                 <ul className="flex justify-around text-black">
                     <li className="">Unidades</li>
