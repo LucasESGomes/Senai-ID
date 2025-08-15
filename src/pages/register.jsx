@@ -6,6 +6,7 @@ function Register() {
     return(
         <>
             <LoggedHeader />
+        
         </>
     )
 }

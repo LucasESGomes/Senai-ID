@@ -1,9 +1,9 @@
 import logo from "../assets/logo.png";
-main
-=======
 import MenuSelection from "../components/menuSelection.jsx";
 import { NavLink } from "react-router-dom";
-main
+
+//Icones
+
 import { ArrowRightLeft } from 'lucide-react';
 
 const Header = () => {
