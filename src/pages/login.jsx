@@ -2,15 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
-import Header from "../components/header.jsx";
-import Footer from "../components/footer.jsx";
-import MainContent from '../components/mainContent.jsx';
+import Header from "../components/layout/header.jsx";
+import Footer from "../components/layout/header.jsx";
+import MainContent from '../components/layout/mainContent.jsx';
 
 // icons
-import { IconInput } from '../components/iconInput.jsx';
-import { PasswordInput } from '../components/passwordInput.jsx';
+import { IconInput } from '../components/inputs/iconInput.jsx';
+import { PasswordInput } from '../components/inputs/passwordInput.jsx';
 import { GraduationCap } from 'lucide-react';
-import { FormContainer } from '../components/formContainer.jsx';
+import { FormContainer } from '../components/containers/formContainer.jsx';
 
 // util
 import maskCPF from '../util/maskCpf.js';

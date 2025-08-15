@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import LoggedHeader from "../components/loggedHeader.jsx";
+import LoggedHeader from "../components/layout/loggedHeader.jsx";
 
 function Register() {
 

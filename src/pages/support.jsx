@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 
-import Header from '../components/header.jsx';
-import Footer from '../components/footer.jsx';
-import MainContent from '../components/mainContent.jsx';
+import Header from '../components/layout/header.jsx';
+import Footer from '../components/layout/footer.jsx';
+import MainContent from '../components/layout/mainContent.jsx';
 
-import { IconInput } from '../components/iconInput.jsx';
-import { FormContainer } from '../components/formContainer.jsx';
+import { IconInput } from '../components/inputs/iconInput.jsx';
+import { FormContainer } from '../components/containers/formContainer.jsx';
 
 import { Phone } from 'lucide-react';
 

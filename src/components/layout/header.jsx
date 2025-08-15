@@ -1,4 +1,4 @@
-import logo from "../assets/senai.png";
+import logo from "../../assets/senai.png";
 import { NavLink } from "react-router-dom";
 const Header = () => {
     return (

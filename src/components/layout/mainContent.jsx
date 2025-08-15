@@ -1,4 +1,4 @@
-import background from '../assets/bg.png';
+import background from '../../assets/bg.png';
 
 export default function MainContent({ children }) {
     return (

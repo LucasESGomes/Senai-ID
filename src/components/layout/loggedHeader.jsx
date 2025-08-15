@@ -1,27 +1,52 @@
-import logo from "../assets/logo.png";
-import MenuSelection from "../components/menuSelection.jsx";
+import logo from "../../assets/logo.png";
+import MenuSelection from "./menuSelection";
 import { NavLink } from "react-router-dom";
+//import { useState } from "react";
 
 //Icones
-
 import { ArrowRightLeft } from 'lucide-react';
+import { Headset } from 'lucide-react';
+import { Users } from 'lucide-react';
+import { Mail } from 'lucide-react';
+
 
 const Header = () => {
+  //const [selectedElement, descelectedElement] = useState(false);
+
     return (
       <>
         <nav className="top-0 w-full flex justify-end items-center py-2 px-5 text-white bg-red-500">
-          <p className="font-semibold text-0.7xl">Suporte</p>
+          <NavLink className="font-semibold text-0.7xl">Suporte</NavLink>
         </nav>
-        <header className="w-full flex justify-around text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
+        <header className="w-full flex items-center justify-around text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
           <img className="h-12" src={logo} alt="/" />
 
-
+                {/*Janela Pop-up de cadastro*/}
                 <MenuSelection />     
                 
-                <p className=" flex justify-center items-center gap-2 text-black cursor-pointer">
-                    <ArrowRightLeft/>
+                {/*Liberações*/}
+                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
+                    <ArrowRightLeft />
                     Liberações
-                </p>
+                </NavLink>
+
+                {/*Usúarios*/}
+                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
+                    <Users />
+                    Usuários
+                </NavLink>
+
+                {/*Suporte*/}
+                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
+                    <Headset />
+                    Suporte
+                </NavLink>
+
+                {/*Mensagens*/}
+                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
+                    <Mail />
+                    Mensagens
+                </NavLink>
 
         </header>
       </>
