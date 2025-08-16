@@ -1,9 +1,9 @@
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { UserPlus } from "lucide-react";
 
 //Icones
 import { ChevronRight } from 'lucide-react';
-import { NavLink } from "react-router-dom";
+import { UserPlus } from "lucide-react";
 
 export default function Header() {
     const [oppenedMenu, closedMenu] = useState(false);
