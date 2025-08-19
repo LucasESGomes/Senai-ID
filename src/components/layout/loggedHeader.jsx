@@ -1,61 +1,36 @@
+import NavItem from "./navItem";
 import logo from "../../assets/logo.png";
 import MenuSelection from "./menuSelection";
 import { NavLink } from "react-router-dom";
-import React, { use, useState } from "react";
-//import { useState } from "react";
 
 //Icones
+import { ArrowLeftToLine } from 'lucide-react';
 import { ArrowRightLeft } from 'lucide-react';
 import { Headset } from 'lucide-react';
 import { Users } from 'lucide-react';
 import { Mail } from 'lucide-react';
 
 
-const Header = () => {
-  const [isHovered, notHovered] = useState(null);
 
-  const link = [
-    { name: "Cadastro", to: "/" },
-    { name: "Liberações", to: "/0" },
-    { name: "Usúarios", to: "/0" },
-    { name: "Suporte", to: "/0" },
-    { name: "Mensagens", to: "/0" }
-  ]
+const Header = () => {
 
     return (
       <>
-        <nav className="top-0 w-full flex justify-end items-center py-2 px-5 text-white bg-red-500">
-          <NavLink className="font-semibold text-0.7xl">Suporte</NavLink>
+        <nav className="top-0 w-full flex justify-start items-center py-2 px-5 text-white bg-red-500">
+          <NavLink className="flex gap-2 font-semibold text-[16.5px]"><ArrowLeftToLine /> Encerrar sessão</NavLink>
         </nav>
         <header className="w-full flex items-center justify-around text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
           <img className="h-12" src={logo} alt="/" />
 
                 {/*Janela Pop-up de cadastro*/}
-                <MenuSelection />     
+                <NavItem>
+                  <MenuSelection /> 
+                </NavItem>    
                 
-                {/*Liberações*/}
-                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
-                    <ArrowRightLeft />
-                    Liberações
-                </NavLink>
-
-                {/*Usúarios*/}
-                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
-                    <Users />
-                    Usuários
-                </NavLink>
-
-                {/*Suporte*/}
-                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
-                    <Headset />
-                    Suporte
-                </NavLink>
-
-                {/*Mensagens*/}
-                <NavLink className=" flex justify-center items-center gap-2 text-black cursor-pointer">
-                    <Mail />
-                    Mensagens
-                </NavLink>
+                <NavItem to="/liberações" icon={ArrowRightLeft}>Liberações</NavItem>
+                <NavItem to="/usuarios" icon={Users}>Usúarios</NavItem>
+                <NavItem to="/suporte" icon={Headset}>Suporte</NavItem>
+                <NavItem to="/mensagens" icon={Mail}>Mensagens</NavItem>
 
         </header>
       </>

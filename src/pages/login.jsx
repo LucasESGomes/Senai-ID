@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
 import Header from "../components/layout/header.jsx";
-import Footer from "../components/layout/header.jsx";
+import Footer from "../components/layout/footer.jsx";
 import MainContent from '../components/layout/mainContent.jsx';
 
 // icons

@@ -4,11 +4,11 @@ const Footer = () => {
         <footer className="w-full shadow-2xl/100" >
             <nav className="w-full py-4" >
                 <ul className="flex justify-around text-black">
-                    <li className="">Unidades</li>
-                    <li className="" >Perguntas Frequentes</li>
-                    <li className="" >Fale Conosco</li>
-                    <li className="" >Transparência</li>
-                    <li className="" >Para a sua empresa</li>
+                    <li className="#">Unidades</li>
+                    <li className="#" >Perguntas Frequentes</li>
+                    <li className="#" >Fale Conosco</li>
+                    <li className="#" >Transparência</li>
+                    <li className="#" >Para a sua empresa</li>
                 </ul>
             </nav>
             <div className="flex justify-around items-center text-white py-9 bg-red-800" >
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center text-white py-3 bg-red-500">
-                <p className="">
+                <p className="#">
                     &copy; {new Date().getFullYear()} SENAI ID. Todos os direitos reservados.
                 </p>
             </div>

@@ -4,7 +4,7 @@ const Header = () => {
     return (
       <>
         <nav className="top-0 w-full flex justify-end items-center py-2 px-5 text-white bg-red-500">
-          <NavLink to="/support">
+          <NavLink to="">
             <p className="font-semibold text-0.7xl">Suporte</p>
           </NavLink>
         </nav>
