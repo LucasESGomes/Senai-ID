@@ -1,6 +1,7 @@
 import logo from "../../assets/logo.png";
 import MenuSelection from "./menuSelection";
 import { NavLink } from "react-router-dom";
+import React, { use, useState } from "react";
 //import { useState } from "react";
 
 //Icones
@@ -11,7 +12,15 @@ import { Mail } from 'lucide-react';
 
 
 const Header = () => {
-  //const [selectedElement, descelectedElement] = useState(false);
+  const [isHovered, notHovered] = useState(null);
+
+  const link = [
+    { name: "Cadastro", to: "/" },
+    { name: "Liberações", to: "/0" },
+    { name: "Usúarios", to: "/0" },
+    { name: "Suporte", to: "/0" },
+    { name: "Mensagens", to: "/0" }
+  ]
 
     return (
       <>
