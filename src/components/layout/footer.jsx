@@ -1,6 +1,8 @@
 //Icones
 import { Instagram } from 'lucide-react';
-
+import { Youtube } from 'lucide-react';
+import { Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 
 
@@ -29,10 +31,12 @@ const Footer = () => {
                 </div>
                 <div>
                     <p className="font-bold" >REDES SOCIAIS</p>
-                    <Instagram />
-                    <img src=""/>
-                    <img src=""/>
-                    <img src=""/>
+                    <div className='flex gap-3'>
+                        <Instagram />
+                        <Youtube />
+                        <Twitter />
+                        <Linkedin />
+                    </div>
                 </div>
             </div>
             <div className="flex justify-center items-center text-white py-3 bg-red-500">
