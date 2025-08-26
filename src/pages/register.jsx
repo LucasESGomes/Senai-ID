@@ -75,9 +75,10 @@ function Register() {
             <LoggedHeader />
 
             <MainContent>
-                <FormContainer title="Cadastro de aluno" buttonText="Cadastrar" width="3xl" gap="10" onSubmit={() => { alert("Cadastro realizado com sucesso!") }}>
+                <FormContainer title="Cadastro de aluno" buttonText="Cadastrar" width="3xl" onSubmit={() => { alert("Cadastro realizado com sucesso!") }}>
                     <FormRow>
-                        <div className="w-[48%] flex flex-col">
+                        <div className="w-[48%] flex flex-col gap-2">
+                            <h2>Nome completo</h2>
                             <IconInput 
                                 icon={<User />} 
                                 placeholder="Digite o nome completo" 
@@ -88,6 +89,7 @@ function Register() {
                             />
                         </div>
                         <div className="w-[48%] flex flex-col gap-2">
+                            <h2>CPF</h2>
                             <IconInput 
                                 icon={<SquareUser />} 
                                 placeholder="Digite o CPF" 
@@ -101,17 +103,20 @@ function Register() {
                     </FormRow>
                     <FormRow>
                         <div className="w-[48%] flex flex-col gap-2">
+                            <h2>Matrícula</h2>
                             <IconInput 
                                 icon={<GraduationCap />} 
                                 placeholder="Digite a matrícula" 
                                 maxLength="8" 
-                                type="text" 
+                                type="text"
+                                inputmode="numeric" 
                                 label="Matrícula" 
                                 value={formData.matricula}
                                 onChange={(e) => handleInputChange('matricula', e.target.value)}
                             />
                         </div>
                         <div className="w-[48%] flex flex-col gap-2">
+                            <h2>Data de nascimento</h2>
                             <IconInput 
                                 icon={<Calendar />} 
                                 placeholder="Insira a data de nascimento" 
@@ -163,7 +168,7 @@ function Register() {
                     photoPreview={photoPreview}
                     name={formData.name || "Nome do Estudante"} 
                     dateOfBirth={formData.dateOfBirth || "00/00/0000"} 
-                    course={formData.course || "Curso do Estudante"} 
+                    course={formData.course || ""} 
                     matricula={formData.matricula || "00000000"} 
                     cpf={formData.cpf || "000.000.000-00"} 
                 />

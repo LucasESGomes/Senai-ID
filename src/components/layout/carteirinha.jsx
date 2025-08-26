@@ -5,7 +5,7 @@ const Carteirinha = ({
   photoPreview, 
   name = "Nome do Estudante", 
   dateOfBirth = "00/00/0000", 
-  course = "Curso do Estudante", 
+  course = "", 
   matricula = "00000000", 
   cpf = "000.000.000-00" 
 }) => {

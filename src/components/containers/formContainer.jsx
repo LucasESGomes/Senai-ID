@@ -13,7 +13,7 @@ export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
       </div>
 
       {/* Conteúdo do formulário */}
-      <div className="p-8 flex flex-col gap-4">
+      <div className="p-8 flex flex-col gap-10">
         {children}
       </div>
 
