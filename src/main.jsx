@@ -9,6 +9,7 @@ import Support from './pages/support.jsx';
 
 import Register from './pages/register.jsx'
 
+import DelayControl from './pages/delayControl.jsx'; 
 
 import './index.css';
 
@@ -16,10 +17,9 @@ import './index.css';
 const router = createBrowserRouter([
   {path: '/', element: <Register />},
   {path: '/login', element: <Login />},
-  {path: '/support', element: <Support />},
-
-  {path: '/register', element: <Register />},
-  {path: '/login', element: <Login />}
+  {path: '/suporte', element: <Support />},
+  {path: '/atrasos', element: <DelayControl />},
+  {path: '/registro', element: <Register />},
 ]);
 
 createRoot(document.getElementById('root')).render(

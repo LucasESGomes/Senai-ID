@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 //Icons
 import { Search } from 'lucide-react';
 
-const delayManagement = () => {
+const FormManagement = () => {
 
     return(
         <main className="flex justify-center position relative top-10">
@@ -21,4 +21,4 @@ const delayManagement = () => {
     );
 }
 
-export default delayManagement;
+export default FormManagement;
