@@ -41,7 +41,8 @@ function Login () {
                         </span>
                         <span className='flex items-center gap-3 content-start'>
                             <label htmlFor="remember-me">Lembrar de mim</label>
-                            <input type="checkbox" id="remember-me" />
+                            <input type="checkbox" className='appearance-none w-5 h-5 border-2 border-red-500 rounded checked:bg-red-500 checked:border-red-500 
+                                checked:after:content-["✔"] checked:after:text-white checked:after:block checked:after:text-center checked:after:leading-5' id="remember-me" />
                         </span>
                         </div>
                     </div>
