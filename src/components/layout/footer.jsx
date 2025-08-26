@@ -1,3 +1,9 @@
+//Icones
+import { Instagram } from 'lucide-react';
+
+
+
+
 const Footer = () => {
 
     return(
@@ -23,7 +29,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <p className="font-bold" >REDES SOCIAIS</p>
-                    <img src=""/>
+                    <Instagram />
                     <img src=""/>
                     <img src=""/>
                     <img src=""/>

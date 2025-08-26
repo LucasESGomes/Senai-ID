@@ -1,6 +1,6 @@
 import NavItem from "./navItem";
 import logo from "../../assets/logo.png";
-import MenuSelection from "./menuSelection";
+import MenuSelection from "../containers/menuSelection";
 import { NavLink } from "react-router-dom";
 
 //Icones
