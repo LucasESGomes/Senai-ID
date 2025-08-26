@@ -17,11 +17,15 @@ const Header = () => {
     return (
       <>
         <nav className="top-0 w-full flex justify-start items-center py-2 px-5 text-white bg-red-500">
-          <NavLink className="flex gap-2 text-sm items-center font-semibold"><ArrowLeftToLine /> Encerrar sessão</NavLink>
+
+          <NavLink className="flex gap-2 text-sm items-center font-semibold "><ArrowLeftToLine /> Encerrar sessão</NavLink>
+
         </nav>
         <header className="w-full flex items-center justify-around text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
-          <img className="h-12" src={logo} alt="/" />
-
+          <NavLink to="/">
+            <img className="h-12" src={logo} alt="/" />
+          </NavLink>
+      
                 {/*Janela Pop-up de cadastro*/}
                 <NavItem>
                   <MenuSelection /> 

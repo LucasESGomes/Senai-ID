@@ -9,7 +9,8 @@ import Support from './pages/support.jsx';
 
 import Register from './pages/register.jsx'
 
-import DelayControl from './pages/delayControl.jsx';
+import DelayControl from './pages/delayControl.jsx'; 
+
 
 import './index.css';
 
