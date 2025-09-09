@@ -5,10 +5,10 @@ export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
         e.preventDefault(); // evita recarregar a página
         onSubmit?.();
       }}
-      className="border border-gray-300 rounded-xl shadow-lg min-w-md overflow-hidden bg-white "
+      className="border border-gray-300 rounded-xl shadow-lg min-w-md overflow-hidden bg-white"
     >
       {/* Cabeçalho vermelho */}
-      <div className="bg-red-600 text-white text-2xl text-center py-3 font-semibold">
+      <div className="bg-red-600 text-white text-2xl text-center py-3 font-semibol">
         {title}
       </div>
 
