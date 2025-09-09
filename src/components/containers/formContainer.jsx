@@ -1,4 +1,7 @@
-export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
+export const FormContainer = ({ title, buttonText, onSubmit, children, theme = "default" }) => {
+
+  const mainColor = theme === "employee" ? "blue-800" : "red-600";
+
   return (
     <form
       onSubmit={(e) => {
@@ -8,7 +11,7 @@ export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
       className="border border-gray-300 rounded-xl shadow-lg min-w-md overflow-hidden bg-white "
     >
       {/* Cabeçalho vermelho */}
-      <div className="bg-red-600 text-white text-2xl text-center py-3 font-semibold">
+      <div className={`bg-${mainColor} text-white text-2xl text-center py-3 font-semibold`}>
         {title}
       </div>
 
@@ -21,7 +24,7 @@ export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
       <div className="font-bold text-center p-8 rounded-md w-full flex justify-center">
         <button
           type="submit"
-          className="bg-red-600 text-white px-16 py-3 rounded w-full hover:scale-101 transition-transform duration-200  active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+          className={`bg-${mainColor} text-white px-16 py-3 rounded w-full hover:scale-101 transition-transform duration-200  active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed`}
         >
           {buttonText}
         </button>
