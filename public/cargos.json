@@ -1,0 +1,22 @@
+[
+  { "id": "prof1", "nome": "Professor de Automação Industrial" },
+  { "id": "prof2", "nome": "Instrutor de Programação" },
+  { "id": "prof3", "nome": "Técnico de Laboratório" },
+  { "id": "prof4", "nome": "Coordenador de Curso" },
+  { "id": "prof5", "nome": "Supervisor de Ensino" },
+  { "id": "prof6", "nome": "Assistente de Manutenção Predial" },
+  { "id": "prof7", "nome": "Eletricista de Manutenção" },
+  { "id": "prof8", "nome": "Auxiliar de Limpeza" },
+  { "id": "prof9", "nome": "Segurança Patrimonial" },
+  { "id": "prof10", "nome": "Técnico de Informática" },
+  { "id": "prof11", "nome": "Almoxarife" },
+  { "id": "prof12", "nome": "Assistente Administrativo" },
+  { "id": "prof13", "nome": "Recepcionista" },
+  { "id": "prof14", "nome": "Bibliotecário" },
+  { "id": "prof15", "nome": "Inspetor de Qualidade" },
+  { "id": "prof16", "nome": "Operador de Máquinas" },
+  { "id": "prof17", "nome": "Técnico em Segurança do Trabalho" },
+  { "id": "prof18", "nome": "Assistente de Laboratório" },
+  { "id": "prof19", "nome": "Auxiliar de Produção" },
+  { "id": "prof20", "nome": "Coordenador de Área" }
+]

@@ -34,8 +34,8 @@ export default function Header() {
                     <div className="font-bold w-59 h-12 bg-red-500 rounded-md display flex justify-center items-center text-white">
                         <NavLink to="#">Quem será registrado</NavLink>
                     </div>
-                    <NavLink to="#" className="font-bold display justify-center text-red-600 flex p-3 gap-25 cursor-pointer">Aluno <ChevronRight /></NavLink>
-                    <NavLink to="#"  className="font-bold display flex justify-center gap-13.5 p-3 text-blue-500 cursor-pointer">Funcionário <ChevronRight /></NavLink>
+                    <NavLink to="/registrar-aluno" className="font-bold display justify-center text-red-600 flex p-3 gap-25 cursor-pointer">Aluno <ChevronRight /></NavLink>
+                    <NavLink to="/registrar-funcionario"  className="font-bold display flex justify-center gap-13.5 p-3 text-blue-500 cursor-pointer">Funcionário <ChevronRight /></NavLink>
                 </div>
             )}
         </div>
