@@ -10,6 +10,7 @@ import { IconInput } from "../components/inputs/iconInput.jsx";
 import { IconSelect } from "../components/inputs/iconSelect.jsx";
 import { FileInput } from "../components/inputs/fileInput.jsx";
 import Carteirinha from "../components/layout/carteirinha.jsx";
+import Footer from "../components/layout/footer.jsx";
 
 // Icons
 import { User, SquareUser, GraduationCap, Calendar, Wrench } from 'lucide-react';
@@ -183,6 +184,8 @@ function RegisterStudent() {
                     cpf={formData.cpf || "000.000.000-00"} 
                 />
             </MainContent>
+
+            <Footer></Footer>
         </>
     );
 }

@@ -11,11 +11,14 @@ export const FormContainer = ({ title, buttonText, onSubmit, children, theme = "
       className="border border-gray-300 rounded-xl shadow-lg min-w-md overflow-hidden bg-white"
     >
       {/* Cabeçalho vermelho */}
-<<<<<<< HEAD
+
       <div className="bg-red-600 text-white text-2xl text-center py-3 font-semibol">
-=======
+        
+      </div>
+
+
       <div className={`bg-${mainColor} text-white text-2xl text-center py-3 font-semibold`}>
->>>>>>> 80921ac6ff40d6e5c810f697267272dc1625905e
+
         {title}
       </div>
 

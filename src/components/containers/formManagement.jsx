@@ -22,7 +22,7 @@ const FormManagement = () => {
                     <Search className="text-white" />
                     <input
                         type="text"
-                        className="outline-none text-white placeholder:text-gray-100 focus:text-white placeholder:font-semibold placeholder:text-[14px] bg-red-400"
+                        className="outline-none text-white placeholder:text-gray-100 focus:text-white w-85 placeholder:font-semibold placeholder:text-[14px] bg-red-400"
                         placeholder="Pesquisar contas..."
                     />
                 </div>

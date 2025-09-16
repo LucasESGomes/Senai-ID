@@ -13,7 +13,7 @@ function DelayControl() {
             <LoggedHeader />
 
             <MainContent>
-                <FormManagement >
+                <FormManagement>
                     <div className="flex justify-around text-black font-bold border-b-2 pb-3">
                         <p>Usuário</p>
                         <p>ID</p>
