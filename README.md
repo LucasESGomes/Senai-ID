@@ -29,6 +29,8 @@ Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso da t
 - [Lucas Gomes](https://www.github.com/lucasesgomes)
 - [Otávio Vinícius](https://www.github.com/TavinV)
 
+## Prototipagem - Senai-ID
+
 - [Figma](https://www.figma.com/design/w9qOEVxM1P0bWb4MGrbmdp/TCC?node-id=0-1&t=pvHIlhOgWShJXMp6-1)
 
 <p align="center"><img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo.png" alt="project-image" style="width: 300px"></p>
