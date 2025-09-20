@@ -16,7 +16,7 @@ Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso da t
 
 ## Tecnologias Utilizadas
 
-- **Front-end**: ReactJS, TailwindCSS, JavaScript, ESlint
+- **Front-end**: ReactJS, TailwindCSS, JavaScript, Vite, ESlint
 - **Back-end**: Node.js, Express
 - **Banco de Dados**: MongoDB
 - **Autenticação**: JWT (JSON Web Token)
