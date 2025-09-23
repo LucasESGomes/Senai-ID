@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	  baseURL: 'https://senai-id-1.onrender.com/api/v1/users',
+	  baseURL: 'https://senai-id-1.onrender.com/api/v1',
 });
 
 export const setAuthToken = (token) => {
